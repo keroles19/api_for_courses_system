@@ -1,0 +1,798 @@
+{
+	"info": {
+		"_postman_id": "032d4091-442d-4468-8444-fa32d073e38f",
+		"name": "cources",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "teacher",
+			"item": [
+				{
+					"name": "course",
+					"item": [
+						{
+							"name": "get all courses for teacher",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzgyODIsImV4cCI6MTY0Njk0MTg4MiwibmJmIjoxNjQ2OTM4MjgyLCJqdGkiOiJNQmJlZk80emhEYWFmOHozIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.Y_Pe_WN3ezVqFMnDme6zhhJNksxfApnmuPBniv2RrTM",
+										"type": "text"
+									}
+								],
+								"url": "{{url}}/teacher/course"
+							},
+							"response": []
+						},
+						{
+							"name": "create course",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzgyODIsImV4cCI6MTY0Njk0MTg4MiwibmJmIjoxNjQ2OTM4MjgyLCJqdGkiOiJNQmJlZk80emhEYWFmOHozIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.Y_Pe_WN3ezVqFMnDme6zhhJNksxfApnmuPBniv2RrTM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/teacher/course?name=asdcxzcqwqe&url=sdfsdfds&stage_id=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"course"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "asdcxzcqwqe"
+										},
+										{
+											"key": "url",
+											"value": "sdfsdfds"
+										},
+										{
+											"key": "stage_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update course by teaher ownar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5NjExODUsImV4cCI6MTY0Njk2ODM4NSwibmJmIjoxNjQ2OTYxMTg1LCJqdGkiOiJSU1hwRHlxbXRoa2p5Tnc1Iiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.G9YZG1XlpuFyncBZEZgdx4oh4WnvbmShsJPPbHxJIeQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"laravel26\",\r\n        \"url\": \"sdfsdfds\",\r\n        \"stage_id\": \"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/teacher/course/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"course",
+										"1"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show course record",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5Mjg1OTIsImV4cCI6MTY0NjkzMjE5MiwibmJmIjoxNjQ2OTI4NTkyLCJqdGkiOiJOdlhlZTV6WlRGMUxrT00zIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.TaOL-9Up3q5xKI5cyEEJagi2-h-nWEexF0VRBauiCE4",
+										"type": "text"
+									}
+								],
+								"url": "{{url}}/teacher/course/4"
+							},
+							"response": []
+						},
+						{
+							"name": "delete course by teacher",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MjEwOTQsImV4cCI6MTY0NjkyNDY5NCwibmJmIjoxNjQ2OTIxMDk0LCJqdGkiOiJuS2ZDTGFEUXpXaHVaTURrIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.t-MurC0XJ8bf0QxnPi2fTaqNaecdYYycYfHgEhiGfD4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"data\" : {\r\n        \"name\": \"laravel26\",\r\n        \"url\": \"sdfsdfds\",\r\n        \"stage_id\": \"1\",\r\n        \"teacher_id\": 1\r\n       \r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/teacher/course/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"course",
+										"1"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "exams",
+					"item": [
+						{
+							"name": "get exams for teacher",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MjU5MjgsImV4cCI6MTY0NjkyOTUyOCwibmJmIjoxNjQ2OTI1OTI4LCJqdGkiOiJ4RUF3c1N0T1BHZGdyNUxKIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.uDPP3qR7GUY0vQIr68W7DBu2FciYtwPoCceh-Zh6HoQ",
+										"type": "text"
+									}
+								],
+								"url": "{{url}}/teacher/exam"
+							},
+							"response": []
+						},
+						{
+							"name": "create exam",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzE4MjAsImV4cCI6MTY0NjkzNTQyMCwibmJmIjoxNjQ2OTMxODIwLCJqdGkiOiJ6eENMWTJHMnNDNFlOWmJYIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.GbhgavDsMw9BPeClrfOL0vN1rRdroNMXlTQ9dSgg6KU",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/teacher/exam?code=sadsa&course_id=2&url=http:",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"exam"
+									],
+									"query": [
+										{
+											"key": "code",
+											"value": "sadsa"
+										},
+										{
+											"key": "course_id",
+											"value": "2"
+										},
+										{
+											"key": "url",
+											"value": "http:"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update exams by teaher ownar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzE4MjAsImV4cCI6MTY0NjkzNTQyMCwibmJmIjoxNjQ2OTMxODIwLCJqdGkiOiJ6eENMWTJHMnNDNFlOWmJYIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.GbhgavDsMw9BPeClrfOL0vN1rRdroNMXlTQ9dSgg6KU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n           \"code\": \"asdqwqwe\",\r\n            \"course_id\": 2,\r\n            \"url\": \"http:\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/teacher/exam/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"exam",
+										"1"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show exam record",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5Mjg1OTIsImV4cCI6MTY0NjkzMjE5MiwibmJmIjoxNjQ2OTI4NTkyLCJqdGkiOiJOdlhlZTV6WlRGMUxrT00zIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.TaOL-9Up3q5xKI5cyEEJagi2-h-nWEexF0VRBauiCE4",
+										"type": "text"
+									},
+									{
+										"key": "id",
+										"value": "4",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}/teacher/exam/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"exam",
+										"4"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete exam by teacher",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5NTkxODgsImV4cCI6MTY0Njk2NjM4OCwibmJmIjoxNjQ2OTU5MTg4LCJqdGkiOiJMaEV6SnYzUGEwSERpZW1uIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.aY7uV78P-JrsW_NG5dgrxKyq6kTsbLgjo2OvhAPXqw0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/teacher/exam/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"exam",
+										"4"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "coupons",
+					"item": [
+						{
+							"name": "get couponsfor teacher",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzE4MjAsImV4cCI6MTY0NjkzNTQyMCwibmJmIjoxNjQ2OTMxODIwLCJqdGkiOiJ6eENMWTJHMnNDNFlOWmJYIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.GbhgavDsMw9BPeClrfOL0vN1rRdroNMXlTQ9dSgg6KU",
+										"type": "text"
+									}
+								],
+								"url": "{{url}}/teacher/coupon"
+							},
+							"response": []
+						},
+						{
+							"name": "create coupon",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5NjAxMjQsImV4cCI6MTY0Njk2NzMyNCwibmJmIjoxNjQ2OTYwMTI0LCJqdGkiOiJWbFhyejlNM3ZXazVxZVJCIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.D8Z9WUCTD0_59enuPID12ZIKAAqZjLBdMGjvbalsmZc",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/teacher/coupon?code=132&start_date=2022-03-09 19:05:18&end_date=2022-03-09 19:05:18&cource_id=1&timer=4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"coupon"
+									],
+									"query": [
+										{
+											"key": "code",
+											"value": "132"
+										},
+										{
+											"key": "start_date",
+											"value": "2022-03-09 19:05:18"
+										},
+										{
+											"key": "end_date",
+											"value": "2022-03-09 19:05:18"
+										},
+										{
+											"key": "cource_id",
+											"value": "1"
+										},
+										{
+											"key": "timer",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update coupons by teaher ownar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzE4MjAsImV4cCI6MTY0NjkzNTQyMCwibmJmIjoxNjQ2OTMxODIwLCJqdGkiOiJ6eENMWTJHMnNDNFlOWmJYIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.GbhgavDsMw9BPeClrfOL0vN1rRdroNMXlTQ9dSgg6KU",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"code\": \"asdsad\",\r\n        \"start_date\": \"2022-03-09 19:05:18\",\r\n        \"end_date\": \"2022-03-09 19:05:18\",\r\n        \"cource_id\":2\r\n       \r\n       \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/teacher/coupon/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"coupon",
+										"2"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show coupon record",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzE4MjAsImV4cCI6MTY0NjkzNTQyMCwibmJmIjoxNjQ2OTMxODIwLCJqdGkiOiJ6eENMWTJHMnNDNFlOWmJYIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.GbhgavDsMw9BPeClrfOL0vN1rRdroNMXlTQ9dSgg6KU",
+										"type": "text"
+									},
+									{
+										"key": "id",
+										"value": "4",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}/teacher/coupon/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"teacher",
+										"coupon",
+										"1"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete coupon by teacher",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "api_token",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MzE4MjAsImV4cCI6MTY0NjkzNTQyMCwibmJmIjoxNjQ2OTMxODIwLCJqdGkiOiJ6eENMWTJHMnNDNFlOWmJYIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.GbhgavDsMw9BPeClrfOL0vN1rRdroNMXlTQ9dSgg6KU",
+										"type": "text"
+									}
+								],
+								"url": "{{url}}/teacher/coupon/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login as teacher",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/teacher/login?name=kero&password=kero2020",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teacher",
+								"login"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "kero"
+								},
+								{
+									"key": "password",
+									"value": "kero2020"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register teaher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "kero",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "kero2020",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "kero2020",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{url}}/teacher/register"
+					},
+					"response": []
+				},
+				{
+					"name": "logout teacher",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "api_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MDM4OTQsImV4cCI6MTY0NjkwNzQ5NCwibmJmIjoxNjQ2OTAzODk0LCJqdGkiOiJuTElFN0pubkYzcWtuVzhqIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.PHSc6uT0x2PwRGdGK4zh0At7w_zTIq6sQX_GrPbikek",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_token",
+									"value": "Bearer",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "{{url}}/teacher/logout"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "logout student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "api_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvdGVhY2hlclwvbG9naW4iLCJpYXQiOjE2NDY5MDM4OTQsImV4cCI6MTY0NjkwNzQ5NCwibmJmIjoxNjQ2OTAzODk0LCJqdGkiOiJuTElFN0pubkYzcWtuVzhqIiwic3ViIjoxLCJwcnYiOiJiMjdiZWUyM2JhZjU0MjlmNWI5YTIxNjk2ZmRlMDNjMjc3MDQ0ZWE1In0.PHSc6uT0x2PwRGdGK4zh0At7w_zTIq6sQX_GrPbikek",
+								"type": "text",
+								"equals": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_token",
+									"value": "Bearer",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "{{url}}/student/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "login as student",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/student/login?name=kero&password=kero2020",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"student",
+								"login"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "kero"
+								},
+								{
+									"key": "password",
+									"value": "kero2020"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "kero",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "kero2020",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "kero2020",
+									"type": "text"
+								},
+								{
+									"key": "stage_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{url}}/student/register"
+					},
+					"response": []
+				},
+				{
+					"name": "get courses by student stage",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "api_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvc3R1ZGVudFwvbG9naW4iLCJpYXQiOjE2NDY5NjA0MzcsImV4cCI6MTY0Njk2NzYzNywibmJmIjoxNjQ2OTYwNDM3LCJqdGkiOiIzejRVZ3lNWk9Ybzh1bENHIiwic3ViIjoxLCJwcnYiOiI5YzQyOWU2YTYwY2Q1Mjg1NDczZjJjOGJjNzAxZWMwOTQ4ZGY0ZDhjIn0.PEIhCUk5qbhk6tGqy-44GYLhLpprkO9mgJ9fzlrI2Lg",
+								"type": "text"
+							}
+						],
+						"url": "{{url}}/student/courses"
+					},
+					"response": []
+				},
+				{
+					"name": "get student courses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "api_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvc3R1ZGVudFwvbG9naW4iLCJpYXQiOjE2NDY5NjA0MzcsImV4cCI6MTY0Njk2NzYzNywibmJmIjoxNjQ2OTYwNDM3LCJqdGkiOiIzejRVZ3lNWk9Ybzh1bENHIiwic3ViIjoxLCJwcnYiOiI5YzQyOWU2YTYwY2Q1Mjg1NDczZjJjOGJjNzAxZWMwOTQ4ZGY0ZDhjIn0.PEIhCUk5qbhk6tGqy-44GYLhLpprkO9mgJ9fzlrI2Lg",
+								"type": "text"
+							}
+						],
+						"url": "{{url}}/student/my_courses"
+					},
+					"response": []
+				},
+				{
+					"name": "use_coupon for register course",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "api_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC92MVwvc3R1ZGVudFwvbG9naW4iLCJpYXQiOjE2NDY5NjM2ODksImV4cCI6MTY0Njk3MDg4OSwibmJmIjoxNjQ2OTYzNjg5LCJqdGkiOiJieDZmU3pEcjBtUWFaTjhoIiwic3ViIjoxLCJwcnYiOiI5YzQyOWU2YTYwY2Q1Mjg1NDczZjJjOGJjNzAxZWMwOTQ4ZGY0ZDhjIn0.39JnjIR9rij1bpg-JNxwo_QCWTbJ6EB4vH2CFroYE4w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "coupon_id",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "course_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{url}}/student/use_coupon"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000/api/v1",
+			"type": "string"
+		}
+	]
+}
